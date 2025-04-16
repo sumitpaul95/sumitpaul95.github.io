@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: hsla(50, 33%, 25%, .75); 
+}
+
+header {
+	background-color: rgb(197, 196, 196);
+	padding: 15px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav ul li a {
+	/*color: #fff;
+	text-decoration: none;
+	padding: 10px;*/
+	float: left;
+  display: block;
+  color: brown;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900px;
+  font-family: "Papyrus", "Copperplate", Fantasy;
+  display: flex;
+	
+}
+
+nav ul li a:hover {
+	background-color: #555;
+}
+
+.section {
+	padding: 50px;
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+	text-align:center;
+	font-size: 52px;
+	font-family: "Times New Roman", Times, serif;
+	color: rgb(229, 229, 235);
+	text-shadow: 2px 2px 4px #000000;
+}
+
+
+		.container {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			margin: 100px auto;
+			padding: 20px;
+			max-width: 500px;
+			text-align: center;
+		}
+
+		input[type=text], input[type=password] {
+			padding: 10px;
+			margin: 10px 0;
+			display: block;
+			width: 100%;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#classes">CLASSES</a></li>
+				<li><a href="#pricing">PRICING</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="login.html">LOG-IN</a></li>
+				<li><a href="signup.html">SIGN-UP</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="home" class="section">
+		<h1><a href="home.html">HRF-FITNESS</a></h1>
+	</section>
+	<div class="container">
+		<h2>Login</h2>
+		<form id="login-form" action="" method="POST">
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Login</button>
+		</form>
+	</div>
+
+	<script src="login.js"></script>
+</body>
+</html>
